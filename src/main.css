@@ -19,21 +19,34 @@ a {
   font-family: 'Bitter', serif;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
+ul li{
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  font-size: x-large;
 }
- .bg::after {
+
+ul {
+  border: solid 2px rgb(246,242,215);
+  padding: 30px;
+}
+
+ .bg:before {
    content: "";
+   display: block;
    background: url(./assets/bagel-background.jpg);
+   background-repeat: no-repeat;
    opacity: 0.2;
-   top: 0;
-   left: 0;
-   bottom: 0;
-   right: 0;
    position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
    z-index: -1;
+   background-position: 50% 0;
+   -ms-background-size: cover;
+   -o-background-size: cover;
+   -moz-background-size: cover;
+   -webkit-background-size: cover;
+   background-size: cover;
  }
